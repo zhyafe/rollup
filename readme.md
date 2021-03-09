@@ -16,3 +16,14 @@ module.exports = {
 ### 执行命令
 
 `rollup -c`
+
+## 插件
+
+### 支持导入 commonjs 模块
+
+```js
+import commonjs from "@rollup/plugin-commonjs";
+{
+  plugins: [commonjs()],
+}
+```

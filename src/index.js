@@ -1,9 +1,8 @@
 import addUtil from "./utils/util1.js";
-
 let count = addUtil.add(1, 2);
 console.log("count", count);
-
-export var demoData = "2323";
+import cjs from "./cjs/cjs1.js";
+console.log("cjs", cjs);
 
 export default {
   subtract: (a, b) => {
