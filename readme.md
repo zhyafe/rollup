@@ -27,3 +27,12 @@ import commonjs from "@rollup/plugin-commonjs";
   plugins: [commonjs()],
 }
 ```
+
+### 支持从 node_modules 中导入模块 打包进 bundle
+
+```js
+import resolve from "@rollup/plugin-node-resolve";
+{
+  plugins: [resolve()],
+}
+```
