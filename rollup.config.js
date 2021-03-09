@@ -10,4 +10,5 @@ module.exports = {
     exports: "default",
   },
   plugins: [commonjs(), resolve()],
+  external: ["lodash"],
 };
