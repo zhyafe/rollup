@@ -10,5 +10,5 @@ module.exports = {
     exports: "default",
   },
   plugins: [commonjs(), resolve()],
-  external: ["lodash"],
+  external: ["lodash"], // 是否将该模块打包进bundle, 如果在数组内，不打包进bundle
 };
