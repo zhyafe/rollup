@@ -1,8 +1,11 @@
 {
   "name": "zhyafe-rollup",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bundle.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c"
   },
@@ -15,5 +18,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "peerDependencies": {}
 }

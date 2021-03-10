@@ -10,6 +10,7 @@ console.log("cjs", cjs);
 console.log("_", _);
 
 export default {
+  ld: _,
   subtract: (a, b) => {
     return a - b;
   },
