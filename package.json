@@ -1,13 +1,14 @@
 {
   "name": "zhyafe-rollup",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/bundle.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "MIT",

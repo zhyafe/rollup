@@ -3,11 +3,11 @@ import cjs from "./cjs/cjs1.js";
 import _ from "lodash";
 
 let count = addUtil.add(1, 2);
-console.log("count", count);
+// console.log("count", count);
 
-console.log("cjs", cjs);
+// console.log("cjs", cjs);
 
-console.log("_", _);
+// console.log("_", _);
 
 export default {
   ld: _,
