@@ -1,8 +1,8 @@
-import addUtil from "./utils/util1.js";
-import cjs from "./cjs/cjs1.js";
-import _ from "lodash";
+// import addUtil from "./utils/util1.js";
+// import cjs from "./cjs/cjs1.js";
+// import _ from "lodash";
 
-let count = addUtil.add(1, 2);
+// let count = addUtil.add(1, 2);
 // console.log("count", count);
 
 // console.log("cjs", cjs);
@@ -10,7 +10,7 @@ let count = addUtil.add(1, 2);
 // console.log("_", _);
 
 export default {
-  ld: _,
+  // ld: _,
   subtract: (a, b) => {
     return a - b;
   },
