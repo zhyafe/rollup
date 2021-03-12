@@ -1,7 +1,9 @@
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
+import typescript from "rollup-plugin-typescript2";
+
 module.exports = {
-  input: "src/index.js",
+  input: "src/index.ts",
   output: [
     {
       file: "dist/cjs/bundle.js",
@@ -32,6 +34,10 @@ module.exports = {
       format: "amd",
     },
   ],
-  plugins: [commonjs(), resolve()],
+  plugins: [
+    commonjs(),
+    resolve(),
+    typescript(), //支持ts
+  ],
   external: ["lodash"], // 是否将该模块打包进bundle, 如果在数组内，不打包进bundle
 };
