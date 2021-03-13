@@ -1,5 +1,3 @@
-interface Iadd {
-  (a: number, b: number): number;
+export default function add(a: number, b: number): number {
+  return a + b;
 }
-
-export let add: Iadd = (a, b) => a + b;

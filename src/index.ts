@@ -1,4 +1,3 @@
-import { add } from "./utils/add";
-import { subtract } from "./utils/subtract";
+import add from "./utils/add";
 
-export { add, subtract };
+export { add };
