@@ -3,11 +3,12 @@
   "compilerOptions": {
     "target": "es5",
     "declaration": true,
+    "declarationDir": "dist",
     "strict": true,
     "esModuleInterop": true,
-    "declarationDir": "dist",
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist"
   },
   "include": ["src"]
 }

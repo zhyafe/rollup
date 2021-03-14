@@ -4,18 +4,16 @@ import typescript from "@rollup/plugin-typescript";
 
 module.exports = {
   input: "src/index.ts",
-  output: [
-    {
-      file: "dist/cjs/bundle.js",
-      format: "cjs",
-      exports: "named",
-    },
-  ],
+  output: {
+    // file: "dist/bundle.js",/
+    format: "cjs",
+    exports: "named",
+    dir: "dist",
+  },
+
   plugins: [
     commonjs(),
     resolve(),
-    typescript({
-      declarationDir: "dist",
-    }), //支持ts
+    typescript(), //支持ts
   ],
 };
