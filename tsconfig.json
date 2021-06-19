@@ -3,12 +3,12 @@
   "compilerOptions": {
     "target": "es5",
     "declaration": true,
-    "declarationDir": "dist",
+    "declarationDir": "supportTs/dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist"
-  },
-  "include": ["src", "esModule"]
+    "outDir": "supportTs/dist"
+  }
+  // "include": ["src", "esModule"]
 }

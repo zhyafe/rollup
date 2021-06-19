@@ -11,7 +11,7 @@
     "treeShaking": "rm -rf './treeShaking/dist/' & rollup -c ./treeShaking/rollup.config.js",
     "multiModuleOutput": "rm -rf './multiModuleOutput/dist/' & rollup -c ./multiModuleOutput/rollup.config.js",
     "supportCjs": "rm -rf './supportCjs/dist/' & rollup -c ./supportCjs/rollup.config.js",
-    "supportCTs": "rm -rf './supportCTs/dist/' & rollup -c ./supportCTs/rollup.config.js",
+    "supportTs": "rm -rf './supportTs/dist/' & rollup -c ./supportTs/rollup.config.js",
     "prepublishOnly": "npm run build",
     "tsc": "tsc"
   },
