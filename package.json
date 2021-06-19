@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "esModule": "rm -rf './esModule/dist/' & rollup -c ./esModule/rollup.config.js",
+    "treeShaking": "rm -rf './treeShaking/dist/' & rollup -c ./treeShaking/rollup.config.js",
     "prepublishOnly": "npm run build",
     "tsc": "tsc"
   },
