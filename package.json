@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "esModule": "rm -rf './esModule/dist/' & rollup -c ./esModule/rollup.config.js",
     "prepublishOnly": "npm run build",
     "tsc": "tsc"
   },

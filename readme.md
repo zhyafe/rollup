@@ -21,6 +21,16 @@ module.exports = {
 
 ### 支持导入 commonjs 模块
 
+## rollup
+
+- 支持 es 模块
+- 支持 treeShaking
+- 可输出多种模块格式代码
+
+> 适用于库的打包
+
+[基本使用](./esModule/doc.md)
+
 ```js
 import commonjs from "@rollup/plugin-commonjs";
 {
