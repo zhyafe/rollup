@@ -1,26 +1,3 @@
-## 使用
-
-### 添加配置文件
-
-```js
-// 三个参数必须配置：input,output.file,output.format
-module.exports = {
-  input: "src/index.js", //入口
-  output: {
-    file: "dist/bundle.js", //输出文件
-    format: "cjs", //模块格式 cjs:commonjs
-  },
-};
-```
-
-### 执行命令
-
-`rollup -c`
-
-## 插件
-
-### 支持导入 commonjs 模块
-
 ## rollup
 
 - 支持 es 模块
@@ -29,7 +6,25 @@ module.exports = {
 
 > 适用于库的打包
 
-[基本使用](./esModule/doc.md)
+### 基本使用
+
+配置三个参数
+
+- 入口
+- 出口
+- 格式
+
+  [基本使用](./esModule/doc.md)
+
+### 多模块输出
+
+通过修改配置文件让 rollup 输出多个模块代码；
+
+output 配置可以是个数组，来进行多模块输出
+
+### 兼容 commonjs
+
+rollup 默认不支持 commonjs，但是可以通过配置插件来支持；
 
 ```js
 import commonjs from "@rollup/plugin-commonjs";
@@ -38,11 +33,13 @@ import commonjs from "@rollup/plugin-commonjs";
 }
 ```
 
-### 支持从 node_modules 中导入模块 打包进 bundle
-
 ```js
 import resolve from "@rollup/plugin-node-resolve";
 {
   plugins: [resolve()],
 }
 ```
+
+### 支持 ts
+
+### 支持从 node_modules 中导入模块 打包进 bundle
