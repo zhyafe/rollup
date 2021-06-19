@@ -26,20 +26,17 @@ output 配置可以是个数组，来进行多模块输出
 
 rollup 默认不支持 commonjs，但是可以通过配置插件来支持；
 
+模块解析插件： @rollup/plugin-node-resolve
+模块转换插件：@rollup/plugin-commonjs
+
 ```js
 import commonjs from "@rollup/plugin-commonjs";
-{
-  plugins: [commonjs()],
-}
-```
-
-```js
 import resolve from "@rollup/plugin-node-resolve";
 {
-  plugins: [resolve()],
+  plugins: [commonjs()，resolve()],
 }
 ```
 
-### 支持 ts
+以 dayjs 为例：配置上述执行打包后，bundle 里面就会有使用到的库代码了
 
-### 支持从 node_modules 中导入模块 打包进 bundle
+### 支持 ts

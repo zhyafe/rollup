@@ -10,6 +10,8 @@
     "esModule": "rm -rf './esModule/dist/' & rollup -c ./esModule/rollup.config.js",
     "treeShaking": "rm -rf './treeShaking/dist/' & rollup -c ./treeShaking/rollup.config.js",
     "multiModuleOutput": "rm -rf './multiModuleOutput/dist/' & rollup -c ./multiModuleOutput/rollup.config.js",
+    "supportCjs": "rm -rf './supportCjs/dist/' & rollup -c ./supportCjs/rollup.config.js",
+    "supportCTs": "rm -rf './supportCTs/dist/' & rollup -c ./supportCTs/rollup.config.js",
     "prepublishOnly": "npm run build",
     "tsc": "tsc"
   },
@@ -23,6 +25,8 @@
     "tslib": "^2.1.0",
     "typescript": "^4.2.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dayjs": "^1.10.5"
+  },
   "peerDependencies": {}
 }
