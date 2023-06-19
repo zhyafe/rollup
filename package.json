@@ -7,12 +7,12 @@
     "dist"
   ],
   "scripts": {
-    "esModule": "rm -rf './esModule/dist/' & rollup -c ./esModule/rollup.config.js",
-    "treeShaking": "rm -rf './treeShaking/dist/' & rollup -c ./treeShaking/rollup.config.js",
-    "multiModuleOutput": "rm -rf './multiModuleOutput/dist/' & rollup -c ./multiModuleOutput/rollup.config.js",
-    "supportCjs": "rm -rf './supportCjs/dist/' & rollup -c ./supportCjs/rollup.config.js",
-    "supportTs": "rm -rf './supportTs/dist/' & rollup -c ./supportTs/rollup.config.js",
-    "moduleImport": "rm -rf './moduleImport/dist/' & rollup -c ./moduleImport/rollup.config.js",
+    "esModule": "rm -rf ./esModule/dist/ && rollup -c ./esModule/rollup.config.js",
+    "treeShaking": "rm -rf ./treeShaking/dist/ && rollup -c ./treeShaking/rollup.config.js",
+    "multiModuleOutput": "rm -rf ./multiModuleOutput/dist/ && rollup -c ./multiModuleOutput/rollup.config.js",
+    "supportCjs": "rm -rf ./supportCjs/dist/ && rollup -c ./supportCjs/rollup.config.js",
+    "supportTs": "rm -rf ./supportTs/dist/ && rollup -c ./supportTs/rollup.config.js",
+    "moduleImport": "rm -rf ./moduleImport/dist/ && rollup -c ./moduleImport/rollup.config.js",
     "prepublishOnly": "npm run build",
     "tsc": "tsc"
   },

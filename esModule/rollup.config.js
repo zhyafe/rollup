@@ -5,6 +5,6 @@ module.exports = {
   output: {
     file: path.join(__dirname, "./dist/cjs/index.js"),
     format: "cjs",
-    exports: "named",
+    // exports:'named',
   },
 };
