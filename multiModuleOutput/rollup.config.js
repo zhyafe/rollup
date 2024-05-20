@@ -32,5 +32,10 @@ module.exports = {
       exports: "named",
       file: path.join(__dirname, "./dist/umd/index.js"),
     },
+    {
+      format: "system",
+      exports: "named",
+      file: path.join(__dirname, "./dist/system/index.js"),
+    },
   ],
 };
