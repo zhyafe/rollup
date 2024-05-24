@@ -27,12 +27,6 @@
 
 3. 执行 rollup 命令生成代码
 
-### 多模块输出
-
-通过修改配置文件让 rollup 输出多个模块代码；
-
-output 配置可以是个数组，来进行多模块输出
-
 ### 兼容 commonjs
 
 rollup 默认不支持 commonjs，但是可以通过配置插件来支持；
@@ -62,3 +56,12 @@ import typescript from "@rollup/plugin-typescript";
 ```
 
 注：支持 ts 配置再 output 配置中使用 dir, 否则不会生成 d.ts 文件
+
+### 输出模块根据使用场景确定：
+
+1. 如果是在 nodejs 中使用，则使用 commonjs 模块
+   plugins: [resolve({ browser: true })] 插件中需要配置 browser: true(如果不设置 true,项目中有 import path from 'path';那么会直接输出到 bundle 中浏览器执行不了) 才能支持浏览器使用
+2. 如果是在浏览器中使用，则使用 umd 模块
+   import autoExternal from "rollup-plugin-auto-external"; 使用此插件 autoExternal() 自动提取三方库(三方库不会进行打包，导入的代码会直接输出到 bundle 中)，
+3. 如果是在其他项目或库中使用，则使用 es 模块
+   import autoExternal from "rollup-plugin-auto-external"; 使用此插件 autoExternal() 自动提取三方库(三方库不会进行打包，导入的代码会直接输出到 bundle 中)，
