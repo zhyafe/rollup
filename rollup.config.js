@@ -23,8 +23,8 @@ module.exports = {
   },
 
   plugins: [
-    commonjs(),
-    resolve(),
-    typescript(), //支持ts
+    // commonjs(),
+    // resolve(),
+    // typescript(), //支持ts
   ],
 };

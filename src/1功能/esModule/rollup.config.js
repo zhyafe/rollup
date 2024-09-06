@@ -1,6 +1,7 @@
 import path from "path";
+console.log("---------", __dirname);
 
-module.exports = {
+export default {
   input: path.join(__dirname, "./index.js"),
   output: {
     file: path.join(__dirname, "./dist/cjs/index.js"),

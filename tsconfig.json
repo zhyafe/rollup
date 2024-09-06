@@ -3,12 +3,12 @@
   "compilerOptions": {
     "target": "es5",
     "declaration": true,
-    "declarationDir": "supportTs/dist",
+    "declarationDir": "src/1功能/supportTs/dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "supportTs/dist"
+    "outDir": "src/1功能/supportTs/dist"
   }
   // "include": ["src", "esModule"]
 }
